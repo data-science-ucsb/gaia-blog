@@ -1,0 +1,171 @@
+* {
+    background-color: aqua;
+}
+
+.navbar {
+    border-bottom: 2px solid black;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+nav {
+    border-bottom: 2px;
+}
+
+@import url('/flexoki.css');
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/fonts/Jost-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Twilight Wind';
+  src: url('/fonts/Twilight Wind.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+  margin: auto;
+  padding: 20px;
+  max-width: 720px;
+  text-align: left;
+  background-color: var(--flexoki-paper);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.4;
+  color: var(--flexoki-black);
+  font-size: 120%;
+}
+
+.handwritten {
+  font-family: 'Twilight Wind', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+  color: #222;
+}
+
+a {
+  color: var(--flexoki-blue-400);
+  opacity: 100%;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 100ms;
+}
+
+a:hover {
+  opacity: 75%;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 100ms;
+}
+
+.title {
+  text-decoration: none;
+  border: 0;
+}
+
+.title span {
+  font-weight: 400;
+}
+
+nav a {
+  margin-right: 10px;
+}
+
+textarea {
+  width: 100%;
+  font-size: 16px;
+}
+
+input {
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+code {
+  padding: 2px 5px;
+  background-color: #f2f2f2;
+}
+
+pre code {
+  color: #222;
+  display: block;
+  padding: 20px;
+  white-space: pre-wrap;
+  font-size: 14px;
+  overflow-x: auto;
+}
+
+div.highlight pre {
+  background-color: initial;
+  color: initial;
+}
+
+div.highlight code {
+  background-color: unset;
+  color: unset;
+}
+
+blockquote {
+  border-left: 1px solid #999;
+  color: var(--flexoki-600);
+  padding-left: 20px;
+  font-style: italic;
+}
+
+footer {
+  padding: 25px;
+  text-align: center;
+}
+
+.helptext {
+  color: #777;
+  font-size: small;
+}
+
+.errorlist {
+  color: #eba613;
+  font-size: small;
+}
+
+/* blog posts */
+ul.blog-posts {
+  list-style-type: none;
+  padding: unset;
+}
+
+ul.blog-posts li {
+  display: flex;
+}
+
+ul.blog-posts li span {
+  flex: 0 0 130px;
+}
+
+ul.blog-posts li a:visited {
+  color: var(--flexoki-purple-400);
+}
+
+.footnote-definition {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+}
