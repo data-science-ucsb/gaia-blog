@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-Allow: /
-Sitemap: http://datascienceucsb.org/gaia-blog/sitemap.xml
