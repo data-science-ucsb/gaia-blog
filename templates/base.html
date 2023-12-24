@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+  <link rel="shortcut icon" type="image" href="../static/images/DataScienceSmallLogo.png"/>
+  <link rel="stylesheet" href="/style.css" />
+
+  <script data-goatcounter="https://tbanalytics.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <script async src="/footnote.js"></script>
+
+  {% block extra_head %} {% endblock extra_head %}
+
+  <title> DS @ UCSB GAIA </title>
+  <link rel="shortcut icon" href="/assets/favicon.ico"/>
+</head>
+
+<body>
+  <header>
+    <a href="/" class="title">
+      <h1 class="handwritten">GAIA</h1>
+      <img src="../static/images/GAIA-Logo.png" alt="GAIA Logo">
+    </a>
+    <a href="https://datascienceucsb.org/" class="title" target="_blank">
+      <h2 class="handwritten">Presented by Data Science UCSB</h2>
+    </a>
+  </header>
+
+  <main>
+    {% block content %} {% endblock %}
+  </main>
+
+  <footer>
+      <a href="/colophon">
+        <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#4385BE"><path d="M3 15C5.48276 15 7.34483 12 7.34483 12C7.34483 12 9.2069 15 11.6897 15C14.1724 15 16.6552 12 16.6552 12C16.6552 12 19.1379 15 21 15" stroke="#4385BE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 20C5.48276 20 7.34483 17 7.34483 17C7.34483 17 9.2069 20 11.6897 20C14.1724 20 16.6552 17 16.6552 17C16.6552 17 19.1379 20 21 20" stroke="#4385BE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M19 10C19 6.13401 15.866 3 12 3C8.13401 3 5 6.13401 5 10" stroke="#4385BE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </a>
+  </footer>
+</body>
