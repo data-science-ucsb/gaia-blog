@@ -1,21 +1,14 @@
 @import url('/flexoki.css');
 
 @font-face {
-  font-family: 'Jost';
-  src: url('/fonts/Jost-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Twilight Wind';
-  src: url('/fonts/Twilight Wind.ttf') format('truetype');
+  font-family: 'Libre Baskerville';
+  src: url('/fonts/LibreBaskerville-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: 'Consolas', sans-serif;
+  font-family: 'Libre Baskerville', sans-serif;
   margin: auto;
   padding: 20px;
   max-width: 720px;

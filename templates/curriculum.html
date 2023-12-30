@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block extra_head %}
+    <style>
+        table {
+            border-collapse: collapse; /* This ensures straight lines */
+            width: 100%; /* Optional: Adjusts the width of the table */
+        }
+        th, td {
+            border: 1px solid black; /* Sets the border style for table headers and cells */
+            text-align: left; /* Aligns text to the left, optional */
+            padding: 8px; /* Adds padding inside cells, optional */
+            font-size: smaller;
+        }
+    </style>
+{% endblock extra_head %}
+
+{% block content %}
+  <nav>
+    <a href="/">Home</a>
+    <a href="/blog">Blog</a>
+  </nav>
+
+  <p>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Summary</th>
+            <th>Links</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Welcome, Intro to Transformers, Reproduce GPT-2</td>
+            <td>
+              <p> <a href="https://www.lesswrong.com/s/PKKsrXtuptWzaKCjr/p/AHhCrJ2KpTjsCSwbt">What is AI alignment?</a> </p>
+              <p> <a href="https://arxiv.org/abs/1706.03762">Attention is All You Need</a> </p>
+              <p> <a href="https://www.lesswrong.com/s/PKKsrXtuptWzaKCjr/p/AHhCrJ2KpTjsCSwbt">GPT-2 Walkthrough</a> + <a href="https://colab.research.google.com/github/neelnanda-io/Easy-Transformer/blob/clean-transformer-demo/Clean_Transformer_Demo_Template.ipynb">starter code</a></p>
+            </td>
+        </tr>
+    </table>
+  </p>
+
+  Some other links and tools that might help you as we progress:
+  <ul>
+      <li> Meta
+        <ul>
+          <li> <a href="https://www.talk2arxiv.org/pdf/1706.03762.pdf">Talk2Arxiv (GPT for understanding papers)</a> </li>
+        </ul>
+      </li>
+
+      <li> Transformers
+        <ul>
+          <li><a href="https://e2eml.school/transformers.html">Transformers from Scratch</a></li>
+          <li><a href="https://jalammar.github.io/illustrated-transformer/">The Illustrated Transformer</a></li>
+        </ul>
+      </li>
+
+      <li> Mechanistic Interpretability
+        <ul>
+          <li><a href="https://www.neelnanda.io/mechanistic-interpretability/getting-started">Getting Started in MI</a></li>
+          <li><a href="https://www.neelnanda.io/mechanistic-interpretability/favourite-papers">Neel Nanda's List of Papers</a> - includes how to approach each one</li>
+          <li><a href="https://www.alignmentforum.org/s/yivyHaCAmMJ3CqSyj/p/XNjRwEX9kxbpzWFWd">200 Concrete Open Problems in MI</a> </li>
+        </ul>
+      </li>
+
+      <li> Other AI Safety/Alignment Programs + Courses
+        <ul>
+          <li><a href="https://course.aisafetyfundamentals.com/alignment">AI Alignment Course (MAIA)</a></li>
+          <li><a href="https://haist.ai/tech-papers">HAIST Tech Papers</a></li>
+          <li><a href="https://docs.google.com/document/d/1NX0DlZRzD3NP7tBeLjMh76w7-w2s8SxV3wj0P7EYpKY/edit">STS 10SI</a></li>
+        </ul>
+      </li>
+  </ul>
+
+{% endblock content %}
