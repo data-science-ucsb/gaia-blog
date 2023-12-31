@@ -24,11 +24,6 @@
 {% endblock extra_head %}
 
 {% block content %}
-<nav>
-    <a href="/">Home</a>
-    <a href="/blog">Writing</a>
-  </nav>
-
   <h2 class="title">{{ page.title }} {{ page.description }}</h2>
   {{ page.content | safe }}
   <h4 class="subtitle handwritten">{{ page.date }}</h4>
