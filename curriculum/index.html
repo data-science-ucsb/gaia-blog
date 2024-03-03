@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+  <link rel="shortcut icon" type="image" href="../static/images/DataScienceSmallLogo.png"/>
+  <link rel="stylesheet" href="/style.css" />
+
+  <script async src="/footnote.js"></script>
+
+  
+    <style>
+        table {
+            border-collapse: collapse; /* This ensures straight lines */
+            width: 100%; /* Optional: Adjusts the width of the table */
+        }
+        th, td {
+            border: 1px solid black; /* Sets the border style for table headers and cells */
+            text-align: left; /* Aligns text to the left, optional */
+            padding: 8px; /* Adds padding inside cells, optional */
+            font-size: smaller;
+        }
+    </style>
+
+
+  <title> Gaucho AI Alignment </title>
+  <link rel="shortcut icon" href="/assets/favicon.ico"/>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="/" class="title">GAIA</a>
+      <div class="right-links">
+        <a href="/curriculum">Curriculum</a>
+        <a href="/blog">Blog</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    
+
+  <p>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Summary</th>
+            <th>Links</th>
+        </tr>
+        <tr>
+            <td>1/12</td>
+            <td>Welcome, Review of Transformers, Reproduce GPT-2</td>
+            <td>
+              <p> <a href="https://www.lesswrong.com/s/PKKsrXtuptWzaKCjr/p/AHhCrJ2KpTjsCSwbt">What is AI alignment?</a> </p>
+              <p> <a href="https://arxiv.org/abs/1706.03762">Attention is All You Need</a> </p>
+              <p> <a href="https://www.youtube.com/watch?v=dsjUDacBw8o&list=PL7m7hLIqA0hoIUPhC26ASCVs_VrqcDpAz&index=2">GPT-2 Walkthrough</a> + <a href="https://colab.research.google.com/github/neelnanda-io/Easy-Transformer/blob/clean-transformer-demo/Clean_Transformer_Demo_Template.ipynb">starter code</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>1/19</td>
+            <td>Reproduce GPT-2</td>
+            <td>
+              <p> <a href="https://arxiv.org/abs/1706.03762">Attention is All You Need</a> </p>
+              <p> <a href="https://jalammar.github.io/illustrated-transformer/">The Illustrated Transformer</a> </p>
+              <p> <a href="https://www.youtube.com/watch?v=dsjUDacBw8o&list=PL7m7hLIqA0hoIUPhC26ASCVs_VrqcDpAz&index=2">GPT-2 Walkthrough</a> + <a href="https://colab.research.google.com/github/neelnanda-io/Easy-Transformer/blob/clean-transformer-demo/Clean_Transformer_Demo_Template.ipynb">starter code</a></p>
+              <p> Learn about <a href="https://einops.rocks/">einops</a>! </p>
+            </td>
+        </tr>
+        <tr>
+            <td>1/26</td>
+            <td>Introduction to Interpretability</td>
+            <td>
+              <p> <a href="https://distill.pub/2020/circuits/zoom-in/">Zoom In: An Introduction to Circuits</a> + <a href="https://tanaybiradar.com/blog/notes-on-zoom-in-circuits/">my notes</a> </p>
+              <p> <a href="https://transformer-circuits.pub/2021/framework/index.html"> A Mathematical Framework for Transformer Circuits </a> + <a href="https://dynalist.io/d/n2ZWtnoYHrU1s4vnFSAQ519J#z=aGu9fP1EG3hiVdq169cMOJId">Glossary of Terms</a> + <a href="https://transformer-circuits.pub/2021/exercises/index.html#solutions">self-test</a> + <a href="https://www.youtube.com/watch?v=KV5gbOmHbjU">Neel Nanda's walkthrough</a> </p>
+              <p> (Skipped) <a href="https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html"> In-context Learning and Induction Heads </a> </p>
+              <p> Tip: Read these in order. These papers are not easy, so spend most of your time on the first two, then just skim the last. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>2/2</td>
+            <td>Transformer Circuits, Continued</td>
+            <td>
+              <p> <a href="https://transformer-circuits.pub/2022/mech-interp-essay/index.html"> Mechanistic Interpretability, Variables, and the Importance of Interpretable Bases </a> </p>
+              <p> <a href="https://transformer-circuits.pub/2022/toy_model/index.html"> Toy Models of Superposition </a> </p>
+            </td>
+        </tr>
+        <tr>
+            <td>2/9</td>
+            <td>Interpretability in the Wild</td>
+            <td>
+              <p> <a href="https://arxiv.org/pdf/2211.00593.pdf">Interpretability in the Wild: A Circuit for Indirect Object Identification in GPT-2 Small</a> </p>
+              <p> <a href="https://colab.research.google.com/github/neelnanda-io/TransformerLens/blob/main/demos/Exploratory_Analysis_Demo.ipynb#scrollTo=ZxVt1CUwjJ6_"> Exploratory Data Analysis (to be done during our meeting) </a> </p>
+            </td>
+        </tr>
+        <tr>
+            <td>2/16</td>
+            <td>Intro to Reinforcement Learning</td>
+            <td>
+                <p>
+                  OpenAI Spinning Up Parts 1-3:
+                  <a href="https://spinningup.openai.com/en/latest/spinningup/rl_intro.html">RL Intro</a>,
+                  <a href="https://spinningup.openai.com/en/latest/spinningup/rl_intro2.html">Types of RL</a>,
+                  <a href="https://spinningup.openai.com/en/latest/spinningup/rl_intro3.html">Policy Optimization</a> (just read "Deriving the Simplest Policy Gradient")
+                </p>
+                <p>  </p>
+                <p>
+                  HuggingFace RL Course:
+                  <a href="https://huggingface.co/learn/deep-rl-course/unit2/introduction">Q Learning</a>,
+                  <a href="https://huggingface.co/learn/deep-rl-course/unit3/introduction">Deep Q Learning</a>
+                  (try to get the main ideas)
+                </p>
+                <p> <a href="https://arxiv.org/pdf/2105.14111.pdf">Goal Misgeneralization in Deep Reinforcement Learning</a> (sections 1-2)</p>
+                <p> <a href="https://deepmind.google/discover/blog/specification-gaming-the-flip-side-of-ai-ingenuity/">Specification gaming: the flip side of AI ingenuity</a> </p>
+                <p> (Optional)
+                  <a href="https://spinningup.openai.com/en/latest/algorithms/vpg.html">VPG</a>,
+                  <a href="https://spinningup.openai.com/en/latest/algorithms/trpo.html">TRPO</a>,
+                  and
+                  <a href="https://spinningup.openai.com/en/latest/algorithms/ppo.html">PPO</a>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>2/23</td>
+            <td>Aligned Language Models</td>
+            <td>
+              <p>
+                <a href="https://arxiv.org/pdf/2203.02155.pdf">Training language models to follow instructions with human feedback</a> (Sections 3.1, 3.5, and 5)
+              </p>
+              <p>
+                Skim <a href="https://arxiv.org/pdf/2204.05862.pdf">Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback</a>
+              </p>
+              <p>
+                Skim <a href="https://arxiv.org/pdf/2305.18290.pdf">Direct Preference Optimization: Your Language Model is Secretly a Reward Model</a>
+              </p>
+
+              Consider: What are the primary limitations of these alignment techinques?
+            </td>
+        </tr>
+        <tr>
+            <td>3/1</td>
+            <td>Adversarial ML, Data Poisoning</td>
+            <td>
+              <p>
+                Skim <a href="https://adversarial-ml-tutorial.org/">Adversarial ML Tutorial</a> ch. 1-3
+              </p>
+              <p>
+                Skim <a href="https://arxiv.org/pdf/2311.17035.pdf">Scalable Extraction of Training Data from (Production) Language Models</a>
+              </p>
+              <p>
+                Figure out how <a href="https://glaze.cs.uchicago.edu/what-is-glaze.html">Glaze</a> and
+                <a href="https://nightshade.cs.uchicago.edu/whatis.html">Nightshade</a> work
+              </p>
+
+              We'll play with adversarial ML, Glaze/Nightshade during the meeting!
+            </td>
+        </tr>
+        <tr>
+          <td>3/8</td>
+          <td>AI Ethics</td>
+          <td>
+            <p>
+              Watch/listen to one of Iason Gabriel's <a href="https://iasongabriel.com/category/talks-and-podcasts/">talks or podcasts</a>,
+              and prepare some discussion notes.
+            </p>
+          </td>
+        </tr>
+    </table>
+  </p>
+
+  Some other links and tools that might help you as we progress:
+  <ul>
+      <li> Meta
+        <ul>
+          <li> <a href="https://www.talk2arxiv.org/pdf/1706.03762.pdf">Talk2Arxiv (GPT for understanding papers)</a> </li>
+        </ul>
+      </li>
+
+      <li> Deep Learning Refresher
+        <ul>
+          <li> <a href="https://edisonzhang.me/Notes/F23/CMPSC-190I/CMPSC-190I-Index">Edison Zhang's CS190I Notes</a> </li>
+        </ul>
+      </li>
+
+      <li> Transformers
+        <ul>
+          <li><a href="https://e2eml.school/transformers.html">Transformers from Scratch</a></li>
+        </ul>
+      </li>
+
+      <li> Mechanistic Interpretability
+        <ul>
+          <li><a href="https://www.neelnanda.io/mechanistic-interpretability/getting-started">Getting Started in MI</a></li>
+          <li><a href="https://www.neelnanda.io/mechanistic-interpretability/favourite-papers">Neel Nanda's List of Papers</a> - includes how to approach each one</li>
+          <li><a href="https://www.alignmentforum.org/s/yivyHaCAmMJ3CqSyj/p/XNjRwEX9kxbpzWFWd">200 Concrete Open Problems in MI</a> </li>
+        </ul>
+      </li>
+
+      <li> Other AI Safety/Alignment Programs + Courses
+        <ul>
+          <li><a href="https://course.aisafetyfundamentals.com/alignment">AI Alignment Course (MAIA)</a></li>
+          <li><a href="https://haist.ai/tech-papers">HAIST Tech Papers</a></li>
+          <li><a href="https://docs.google.com/document/d/1NX0DlZRzD3NP7tBeLjMh76w7-w2s8SxV3wj0P7EYpKY/edit">STS 10SI</a></li>
+        </ul>
+      </li>
+  </ul>
+
+
+  </main>
+
+  <footer>
+      <a href="/colophon" class="colophon-link">
+        <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#4385BE"><path d="M3 15C5.48276 15 7.34483 12 7.34483 12C7.34483 12 9.2069 15 11.6897 15C14.1724 15 16.6552 12 16.6552 12C16.6552 12 19.1379 15 21 15" stroke="#4385BE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 20C5.48276 20 7.34483 17 7.34483 17C7.34483 17 9.2069 20 11.6897 20C14.1724 20 16.6552 17 16.6552 17C16.6552 17 19.1379 20 21 20" stroke="#4385BE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M19 10C19 6.13401 15.866 3 12 3C8.13401 3 5 6.13401 5 10" stroke="#4385BE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </a>
+  </footer>
+</body>
